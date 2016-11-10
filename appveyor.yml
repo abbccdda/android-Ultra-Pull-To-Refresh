@@ -1,0 +1,10 @@
+# install:
+#   - mvn clean install
+
+test_script:
+  - ./gradlew check --refresh-dependencies
+
+cache:
+  - '%HOMEPATH%\.m2' 
+
+build: off
